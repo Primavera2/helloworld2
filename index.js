@@ -1,12 +1,7 @@
-const express = require("express")
-const app = express();
+const app = require('./app')
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000
 
-app.get('/',(req,res)=>{
-  res.json({Message:"Hello From Backend"})
-})
-
-app.listen(port,()=>{
+app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
